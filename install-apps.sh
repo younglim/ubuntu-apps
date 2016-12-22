@@ -10,7 +10,7 @@ sudo gdebi -n smartgit-8_0_1.deb
 
 # Install VirtualBox, Extension Pack and USB3.0 support
 wget http://download.virtualbox.org/virtualbox/5.1.10/virtualbox-5.1_5.1.10-112026~Ubuntu~yakkety_amd64.deb
-sudo gedebi virtualbox-5.1_5.1.10-112026~Ubuntu~yakkety_amd64.deb
+sudo gdebi virtualbox-5.1_5.1.10-112026~Ubuntu~yakkety_amd64.deb
 wget http://download.virtualbox.org/virtualbox/5.1.10/Oracle_VM_VirtualBox_Extension_Pack-5.1.10-112026.vbox-extpack
 sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.1.10-112026.vbox-extpack
 sudo usermod -a -G vboxusers $USER
