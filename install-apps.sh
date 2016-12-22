@@ -6,7 +6,7 @@ sudo apt-get install default-jdk -y
 
 # Install SmartGit
 wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_1.deb
-sudo gdebi smartgit-8_0_1.deb
+sudo gdebi -n smartgit-8_0_1.deb
 
 # Install VirtualBox, Extension Pack and USB3.0 support
 wget http://download.virtualbox.org/virtualbox/5.1.10/virtualbox-5.1_5.1.10-112026~Ubuntu~yakkety_amd64.deb
@@ -17,7 +17,7 @@ sudo usermod -a -G vboxusers $USER
 
 # Install Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo gdebi google-chrome-stable_current_amd64.deb
+sudo gdebi -n google-chrome-stable_current_amd64.deb
 
 # Install Telegram
 sudo add-apt-repository ppa:atareao/telegram -y
@@ -46,7 +46,7 @@ sudo apt-get install network-manager-openvpn -y
 
 # Install Sublime Text 3
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
-sudo gdebi sublime-text_build-3126_amd64.deb
+sudo gdebi -n sublime-text_build-3126_amd64.deb
 
 # Install Wine 32-bit and PlayOnLinux
 sudo dpkg --add-architecture i386
