@@ -55,3 +55,6 @@ sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources
 sudo apt-get update -y
 sudo apt-get install playonlinux -y
 sudo apt upgrade -f ttf-mscorefonts-installer -y
+
+# Remove unnecessary packages
+sudo apt autoremove -y
