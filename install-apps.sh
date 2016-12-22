@@ -39,7 +39,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update -y
 
 # 4. Install Spotify
-sudo apt-get install spotify-client -y
+sudo apt-get install spotify-client -y --allow-unauthenticated
 
 # Install OpenVPN Connect
 sudo apt-get install network-manager-openvpn -y
