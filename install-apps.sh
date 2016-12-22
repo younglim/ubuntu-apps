@@ -54,3 +54,4 @@ wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
 sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources.list.d/playonlinux.list
 sudo apt-get update -y
 sudo apt-get install playonlinux -y
+sudo apt upgrade -f ttf-mscorefonts-installer -y
