@@ -48,6 +48,10 @@ sudo apt-get install network-manager-openvpn -y
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
 sudo gdebi -n sublime-text_build-3126_amd64.deb
 
+# Install core Microsoft Fonts
+wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
+sudo gdebi -n ttf-mscorefonts-installer_3.6_all.deb
+
 # Install Wine 32-bit and PlayOnLinux
 sudo dpkg --add-architecture i386
 wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
