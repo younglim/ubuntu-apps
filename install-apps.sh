@@ -62,7 +62,8 @@ sudo apt-get install winbind -y
 sudo apt upgrade -f ttf-mscorefonts-installer -y
 
 # Install Vagrant
-sudo apt-get install vagrant -y
+wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb
+sudo gdebi vagrant_1.9.1_x86_64.deb
 
 # Remove unnecessary packages
 sudo apt autoremove -y
