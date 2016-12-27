@@ -61,5 +61,8 @@ sudo apt-get install playonlinux -y
 sudo apt-get install winbind -y
 sudo apt upgrade -f ttf-mscorefonts-installer -y
 
+# Install Vagrant
+sudo apt-get install vagrant -y
+
 # Remove unnecessary packages
 sudo apt autoremove -y
