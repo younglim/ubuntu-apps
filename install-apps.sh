@@ -42,7 +42,7 @@ sudo apt-get update -y
 sudo apt-get install spotify-client -y --allow-unauthenticated
 
 # Install OpenVPN Connect
-sudo apt-get install network-manager-openvpn -y
+sudo apt install network-manager-openvpn-gnome -y
 
 # Install Sublime Text 3
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
