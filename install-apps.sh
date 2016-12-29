@@ -1,3 +1,7 @@
+# Install latest linunx firmware
+wget http://launchpadlibrarian.net/296541136/linux-firmware_1.157.6_all.deb
+sudo dpkg -i linux-firmware_1.157.6_all.deb
+
 # Install Pre-req package
 sudo apt-get install gdebi -y
 
