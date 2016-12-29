@@ -1,7 +1,3 @@
-# Install latest linunx firmware
-# wget http://launchpadlibrarian.net/296541136/linux-firmware_1.157.6_all.deb
-# sudo dpkg -i linux-firmware_1.157.6_all.deb
-
 # Install Pre-req package
 sudo apt-get install gdebi -y
 
@@ -68,6 +64,10 @@ sudo apt upgrade -f ttf-mscorefonts-installer -y
 # Install Vagrant
 wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb
 sudo gdebi -n vagrant_1.9.1_x86_64.deb
+
+# Install Opera
+wget http://download4.operacdn.com/pub/opera/desktop/42.0.2393.94/linux/opera-stable_42.0.2393.94_amd64.deb
+sudo gdebi -n opera-stable_42.0.2393.94_amd64.deb
 
 # Enable exfat support
 sudo apt-get install exfat-fuse exfat-utils -y
