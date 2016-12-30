@@ -72,5 +72,8 @@ sudo gdebi -n opera-stable_42.0.2393.94_amd64.deb
 # Enable exfat support
 sudo apt-get install exfat-fuse exfat-utils -y
 
+# Support for import color profiles
+sudo apt-get install gnome-color-manager -y
+
 # Remove unnecessary packages
 sudo apt autoremove -y
