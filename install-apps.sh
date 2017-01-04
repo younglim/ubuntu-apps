@@ -75,5 +75,8 @@ sudo apt-get install exfat-fuse exfat-utils -y
 # Support for import color profiles
 sudo apt-get install gnome-color-manager -y
 
+# Support for gthumb image editor
+sudo apt-get install gthumb -y
+
 # Remove unnecessary packages
 sudo apt autoremove -y
