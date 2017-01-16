@@ -5,15 +5,16 @@ sudo apt-get install gdebi -y
 sudo apt-get install default-jdk -y
 
 # Install SmartGit
-wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_1.deb
-sudo gdebi -n smartgit-8_0_1.deb
+wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_4.deb
+sudo gdebi -n smartgit-8_0_4.deb
 
 # Install VirtualBox, Extension Pack and USB3.0 support
-wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~xenial_amd64.deb
-sudo gdebi -n virtualbox-5.1_5.1.12-112440~Ubuntu~xenial_amd64.deb
-wget http://download.virtualbox.org/virtualbox/5.1.10/Oracle_VM_VirtualBox_Extension_Pack-5.1.10-112026.vbox-extpack
-sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.1.10-112026.vbox-extpack
-sudo usermod -a -G vboxusers $USER
+sudo apt-get install gcc make -y
+wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~yakkety_amd64.deb
+sudo gdebi -n virtualbox-5.1_5.1.12-112440~Ubuntu~yakkety_amd64.deb
+wget http://download.virtualbox.org/virtualbox/5.1.12/Oracle_VM_VirtualBox_Extension_Pack-5.1.12-112440.vbox-extpack
+sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-5.1.12-112440.vbox-extpack
+sudo usermod -a -G vboxusers young
 
 # Install Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
