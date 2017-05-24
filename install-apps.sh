@@ -1,12 +1,19 @@
+# Disable Guest Session
+sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" > /etc/lightdm/lightdm.conf.d/50-no-guest.conf'
+
 # Install Pre-req package
 sudo apt-get install gdebi -y
+
+# Install NoMachine
+http://download.nomachine.com/download/5.2/Linux/nomachine_5.2.21_1_amd64.deb
+sudo gdebi -n nomachine_5.2.21_1_amd64.deb
 
 # Install JDK 1.8
 sudo apt-get install default-jdk -y
 
 # Install SmartGit
-wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_4.deb
-sudo gdebi -n smartgit-8_0_4.deb
+wget http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-17_0_4.deb
+sudo gdebi -n smartgit-17_0_4.deb
 
 # Install VirtualBox, Extension Pack and USB3.0 support
 sudo apt-get install gcc make -y
