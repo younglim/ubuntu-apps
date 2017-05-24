@@ -12,7 +12,7 @@ sudo gdebi -n nomachine_5.2.21_1_amd64.deb
 sudo apt-get install default-jdk -y
 
 # Install SmartGit
-wget http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-17_0_4.deb
+wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-17_0_4.deb
 sudo gdebi -n smartgit-17_0_4.deb
 
 # Install VirtualBox, Extension Pack and USB3.0 support
